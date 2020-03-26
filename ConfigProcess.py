@@ -10,7 +10,7 @@ def change_value(origin_data, change_data):
     assert type(change_data) == dict
     content = ''
     for line in origin_data:
-        index_com = 0
+        index_com = -1
         if '#' in line:
             index_com = line.find('#')
         line_data = line[:index_com].strip()
